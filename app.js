@@ -37,7 +37,7 @@ app.get('/', async (req, res) => {
 
     const message = await Message.find()
 
-    const divElements = message.map((result) => {
+    const divElements = message.map((result,index) => {
         return `<div class="comment">
                     <div class="index">${index+1}F</div>
                     <div class="user">${result.name}：</div>
