@@ -39,7 +39,8 @@ app.get('/', async (req, res) => {
 
     const divElements = message.map((result) => {
         return `<div class="comment">
-                    <div class="user">內容：${result.name}</div>
+                    <div class="index">${index+1}F</div>
+                    <div class="user">${result.name}：</div>
                     <div class="commentcontent">${result.content}</div>
                 </div>`;
     });
