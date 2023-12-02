@@ -2,8 +2,8 @@ const express = require('express')
 const app = express()
 const dotenv = require('dotenv')
 
-const port = 5151
-const ip = '127.0.0.1'
+const port = 5050
+
 
 dotenv.config({ path: './config.env' })
 
@@ -64,6 +64,6 @@ app.post('/uploadmessage', async (req, res) => {
     }
 })
 
-app.listen(port, ip, () => {
-    console.log(`服務器運行在 http://${ip}:${port}`);
+app.listen(port, () => {
+    console.log(`服務器運行在 http://localhost:${port}`);
 })
