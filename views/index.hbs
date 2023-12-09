@@ -263,20 +263,7 @@
 <body>
 
 
-    <div id="wincontent">
-
-        <div id="wintext">
-            <p>本網站為期末計概報告使用，<br><br>請勿張貼與威士忌無關之內容，謝謝。</p>
-            <p>若有違反，本網站將保留刪除留言之權利。</p>
-        </div>
-
-        <div id="winbtn">
-            我同意
-        </div>
-
-    </div>
-    <div id="windowcontainer">
-    </div>
+   
 
     <div id="container">
         <div id="up">
@@ -301,29 +288,6 @@
 
 </body>
 
-<script>
-    var windowbtn = document.getElementById('winbtn');
-    var wincontent = document.getElementById('wincontent');
-    var windowcontainer = document.getElementById('windowcontainer');
 
-    windowbtn.addEventListener('click', () => {
-
-        wincontent.style.opacity = "0";
-
-        windowbtn.style.opacity = "0";
-
-        windowcontainer.style.opacity = "0";
-
-        wincontent.style.zIndex = "-1";
-
-        windowbtn.style.zIndex = "-1";
-
-        windowcontainer.style.zIndex = "-1";
-
-        windowcontainer.style.display = "none";
-
-        windowcontainer.style.backgroundColor = "none";
-    })
-</script>
 
 </html>
